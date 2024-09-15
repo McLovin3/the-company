@@ -1,0 +1,16 @@
+.text {
+	color: #eeeeee;
+	font-size: larger;
+}
+
+.main-background-color {
+	background-color: #101e2d;
+}
+
+.secondary-background-color {
+	background-color: #3a4750;
+}
+
+.accent-background-color {
+	background-color: #00adb5;
+}
