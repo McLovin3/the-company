@@ -1,13 +1,14 @@
 <script>
 	import { Nav, NavItem, NavLink } from '@sveltestrap/sveltestrap';
+	import { base } from '$app/paths';
 
 	import { page } from '$app/stores';
 	$page.url.pathname;
 
 	const links = [
-		{ name: 'Home', path: '/' },
-		{ name: 'Hiring', path: '/hiring' },
-		{ name: 'Our Products', path: '/products' }
+		{ name: 'Home', path: `${base}/` },
+		{ name: 'Hiring', path: `${base}/hiring` },
+		{ name: 'Our Products', path: `${base}/products` }
 	];
 </script>
 
