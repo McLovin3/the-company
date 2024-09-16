@@ -11,7 +11,7 @@
 			<Col xxl={1} class="flex-shrink-1 me-sm-2">
 				<NavMenu />
 			</Col>
-			<Col class="border border-3 w-100 rounded secondary-background-color p-0 overflow-scroll">
+			<Col class="border border-3 w-100 overflow-scroll rounded secondary-background-color p-0">
 				<slot />
 			</Col>
 		</Row>
