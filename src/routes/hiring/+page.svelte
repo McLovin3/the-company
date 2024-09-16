@@ -1,9 +1,10 @@
 <script lang="ts">
 	import employeeImage from '$lib/images/employee.jpeg';
+	import { Col, Row } from '@sveltestrap/sveltestrap';
 </script>
 
-<div class="d-flex flex-row">
-	<div class="p-5">
+<Row class="d-flex p-4 m-0">
+	<Col xl={6}>
 		<h2 class="text display-5 fw-bold">Hiring</h2>
 		<p class="text">
 			Here at ψέματα technologies, we strive for the greatest employees possible. You must have no
@@ -15,12 +16,12 @@
 				trustworthy
 			</span>.
 		</p>
-	</div>
-	<div>
-		<img src={employeeImage} class="rounded me-5 mt-5 border border-3" alt="employee" />
-		<p id="image-text" class="text text-center">Our number 1 employee</p>
-	</div>
-</div>
+	</Col>
+	<Col xl={6} class="text-center p-0">
+		<img src={employeeImage} class="rounded border border-3" alt="employee" />
+		<p id="image-text" class="text">Our number 1 employee</p>
+	</Col>
+</Row>
 
 <svg>
 	<defs>
@@ -54,9 +55,18 @@
 		font-size: 1.5em;
 	}
 
-	img {
-		width: 400px;
-		height: 400px;
+	@media (min-width: 768px) {
+		img {
+			width: 400px;
+			height: 400px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		img {
+			width: 200px;
+			height: 200px;
+		}
 	}
 
 	/* Taken from https://speckyboy.com/text-distortion-effects/ */
