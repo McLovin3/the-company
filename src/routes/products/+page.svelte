@@ -6,7 +6,7 @@
 	import prototype from '$lib/images/prototype.jpg';
 </script>
 
-<Row class="p-4 d-flex m-0">
+<Row class="p-3 d-flex m-0">
 	<Col class="m-0 p-0">
 		<h2 class="text display-4 fw-bold">Our Products</h2>
 		<p class="text">

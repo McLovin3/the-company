@@ -3,8 +3,8 @@
 	import { Col, Row } from '@sveltestrap/sveltestrap';
 </script>
 
-<Row class="d-flex p-4 m-0">
-	<Col xl={6}>
+<Row class="d-flex p-3 m-0">
+	<Col xl={6} class="m-0 p-0">
 		<h2 class="text display-5 fw-bold">Hiring</h2>
 		<p class="text">
 			Here at ψέματα technologies, we strive for the greatest employees possible. You must have no

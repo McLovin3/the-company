@@ -4,23 +4,14 @@
 	import '../styles.css';
 </script>
 
-<Container fluid class="min-vh-100 min-vw-100 main-background-color d-flex flex-column p-5">
+<Container fluid class="min-vh-100 vw-100 main-background-color mx-auto">
 	<h1 class="text-white text-center mx-auto display-1 mb-4 fw-bold">ψέματα Technologies</h1>
-	<div id="content" class="d-flex flex-row mx-auto">
-		<Row>
-			<Col xxl={1} class="flex-shrink-1 me-sm-2">
-				<NavMenu />
-			</Col>
-			<Col class="border border-3 w-100 overflow-scroll rounded secondary-background-color p-0">
-				<slot />
-			</Col>
-		</Row>
-	</div>
+	<Row class="d-flex flex-row mx-auto w-75 p-0 m-0 pb-5">
+		<Col xxl={1} class="flex-shrink-1 me-sm-2 mb-2 p-0">
+			<NavMenu />
+		</Col>
+		<Col class="border border-3 ms-0 w-100 overflow-scroll rounded secondary-background-color p-0">
+			<slot />
+		</Col>
+	</Row>
 </Container>
-
-<style>
-	#content {
-		width: 90%;
-		height: 80%;
-	}
-</style>
